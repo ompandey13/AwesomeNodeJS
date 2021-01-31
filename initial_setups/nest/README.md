@@ -28,3 +28,34 @@ npm install eslint-config-airbnb --save-dev
 npm install eslint-config-airbnb-base --save-dev
 npm install eslint-plugin-import --save-dev
 ```
+
+## Pre-commit git hooks with Husky
+
+Typescript code linting and Unit test should be passed before committing the code. It will be useful specially if you are going to use some sort of CI.
+
+Install husky
+
+```bash
+##yarn
+yarn add husky --dev
+yarn add lint-staged --dev
+## npm
+npm install husky --save-dev
+npm install lint-staged --save-dev
+```
+
+In Package.json
+
+```bash
+"scripts": {
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "pre-commit": "lint-staged",
+},
+"husky": {
+    "hooks": {
+        "pre-commit": "yarn pre-commit"
+    }
+}
+```
+
+Add [lint-staged.config.js](https://github.com/ompandey13/AwesomeNodeJS/blob/master/initial_setups/nest/lint-staged.config.js).
