@@ -59,3 +59,7 @@ In Package.json
 ```
 
 Add [lint-staged.config.js](https://github.com/ompandey13/AwesomeNodeJS/blob/master/initial_setups/nest/lint-staged.config.js).
+
+## TypeORM Migration
+
+Create a migration file `yarn typeorm migration:create -n tableName -d src/migrations`
