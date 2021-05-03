@@ -47,7 +47,6 @@ export class AuthService {
     const { employee } = await this.userService.login(email, password);
     const auth = new Auth();
     auth.userId = employee.id;
-    auth.role = employee.role;
     await this.authRepository.save(auth);
     const payload = {
       email: employee.email,

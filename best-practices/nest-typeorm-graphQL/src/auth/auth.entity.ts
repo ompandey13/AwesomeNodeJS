@@ -30,12 +30,6 @@ export class Auth extends BaseEntity {
   @Column({ nullable: true })
   scope: string;
 
-  @Column('numeric', { nullable: true })
-  roleId: number;
-
-  @Field()
-  role: string;
-
   @Field({ nullable: true })
   @Column({ nullable: true })
   nToken: string;
