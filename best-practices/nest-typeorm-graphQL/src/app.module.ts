@@ -6,6 +6,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AppResolver } from './app.resolver';
 import { typeOrmConfig } from './config/typeorm.config';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { typeOrmConfig } from './config/typeorm.config';
       autoSchemaFile: 'schema.gql',
     }),
     ConfigModule.forRoot({ isGlobal: true }),
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService, AppResolver],
