@@ -1,7 +1,7 @@
 import { MigrationInterface, QueryRunner, getRepository } from 'typeorm';
 import { User } from '../../user/user.entity';
 
-export class tax1605023234147 implements MigrationInterface {
+export class users1620024833762 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     const UserRepository = await getRepository(User);
     const user: User = UserRepository.create();
