@@ -14,14 +14,7 @@ NodeJs Guidelines Fresher/Intermediate
 * There is at least one code reviewer for any merge over dev branch
 * QA and Staging branch will only be merged by tech lead(Either internal or Client side)
 * A linter passing code will only be eligible for pull request (Reviewer will responsible for that)
-  > Use the below libraries to get around dependencies for your Code editer
-    > * "eslint": "^6.8.0"
-    > * "eslint-config-airbnb": "^18.0.1"
-    > * "eslint-config-airbnb-base": "^14.0.0"
-    > * "eslint-config-prettier": "^6.10.0"
-    > * "eslint-plugin-import": "^2.20.1"
-    > * "@typescript-eslint/parser"
-    > * @typescript-eslint/eslint-plugin"
+  > We strictly recommend to follow the [Initial Setup](https://github.com/ompandey13/AwesomeNodeJS/tree/master/initial_setups/nest#readme) to any project.
 
 # Basic Guidelines for new joiners
 
@@ -54,3 +47,6 @@ NodeJs Guidelines Fresher/Intermediate
 # Writing Test cases
 * One should write test cases along with code and make it a practice as it greatly improves ones efficiency at quality of code being written.
 * A test framework can be used to go about the whole process of developing a test oriented programming.
+
+# Best Practices
+* [NestJS TypeORM GraphQL](https://github.com/ompandey13/AwesomeNodeJS/tree/master/best-practices/nest-typeorm-graphQL)
